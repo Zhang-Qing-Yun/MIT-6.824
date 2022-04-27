@@ -56,7 +56,7 @@ func main() {
 	// rather than being partitioned into NxM buckets.
 	//
 
-	sort.Sort(ByKey(intermediate))
+	sort.Sort(ByKey(intermediate))  // 强转
 
 	oname := "mr-out-0"
 	ofile, _ := os.Create(oname)
